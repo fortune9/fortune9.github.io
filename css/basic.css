@@ -1,0 +1,221 @@
+body {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url(../image/background.png);
+}
+td {
+	font-size: 16px;
+	vertical-align: middle;
+}
+.biaoti {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	color: #3333FF;
+	border: medium double #FF0033;
+}
+.footnote {
+	font-family: "Courier New", Courier, mono;
+	font-size: 13px;
+	color: #FFFFFF;
+	text-decoration: underline;
+	background-color: #0066CC;
+	text-align: center;
+}
+.main_text {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-style: normal;
+	line-height: normal;
+}
+.sep_line {
+	color: #0066CC;
+}
+.count {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.list {
+	list-style-position: outside;
+	list-style-type: square;
+}
+.box {
+	border: medium outset;
+	font-size: 18px;
+	color: #0000CC;
+	background-color: #FFFFFF;
+}
+.emphasize {
+	display: inline;
+	font-size: 18px;
+	color: #000033;
+	font-family: "Times New Roman", Times, serif;
+}
+.align_top {
+	vertical-align: top;
+}
+.sub_title {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.sub_menu
+{
+	display: none;
+	list-style-type: none;
+    padding: 0;
+    margin: 0 0 0 0%;
+    position: absolute; /* make sure it is dropdown*/
+	background-color: #CEECF5;
+	text-align: left;
+    /*border: 5px solid #222;
+    border-top: 0;
+    margin-left: -5px; */
+}
+
+.biaoti:hover .sub_menu /* only effect when hover on .biaoti*/
+{ 
+    display: block; /* make sure it is dropdown*/
+}
+.sub_menu > li:hover
+{
+	background-color: #EFFBF5;
+}
+.sub_menu > li a, visited {
+    text-decoration: none;
+}
+
+/* settings for image slides */
+#slider-area
+{
+	/*width: 100%; this must be 100%*/
+	height:360px;
+	width: 360px;
+	position: relative;
+	margin: 10px auto;
+	display: block;
+	text-align: center;
+}
+#slides
+{
+	position: relative; /* absolute does not work*/
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+/* give each slide the same dimensions */
+#slides .slide
+{ 
+  width: 100%;
+  height: 100%; 
+  position:absolute; /*important for centering*/
+}
+
+#slides .slide .img
+{
+}
+
+#slides .slide img /* make sure each slide image is centered */
+{
+	background-color: #FFFFFF;
+	max-height: 100%;
+	max-width: 100%;
+	display: block;
+	position:absolute; /* relative sould also work*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%); /* IE < 9.0 */
+	-webkit-transform: translate(-50%,-50%); /* old Chrome, Safari, Opera */	
+}
+
+#slides .slide .info
+{
+	z-index: 99;
+	position: absolute;
+	bottom: 0%;
+	text-align: left;
+	background-color: rgba(0,0,190,0.7);
+	padding: 0;
+	opacity: 0;
+}
+
+#slider-area:hover .info
+{
+	opacity: 1;
+	transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+}
+
+#slides .slide .info h2
+{
+	padding: 0 20px;
+	margin-top: 0px;
+	font-weight: bold;
+	color: #FFFF66;
+}
+
+#slides .slide .info p
+{
+	padding: 0 20px;
+	margin-top: -15px;
+	margin-bottom: 0px;
+	font-weight: lighter;
+	color: #FFFF66;
+}
+
+#next {
+	height: 50px;
+	width: 5%;
+	top: 43%;
+	line-height: 50px; /*using percentage can not vertically align*/
+	font-size: 40px;
+	text-align: center;
+	color: #FFFF66;
+	background-color: rgba(0,0,190,0.5);
+	position: absolute;
+	right: 0;
+	z-index: 99;
+	cursor: pointer;
+	opacity: 0;
+}
+#prev {
+	height: 50px;
+	width: 5%;
+	top: 43%;
+	line-height: 50px;
+	font-size: 40px;
+	text-align: center;
+	color: #FFFF66;
+	background-color: rgba(0,0,190,0.5);
+	position: absolute;
+	left: 0;
+	z-index: 99;
+	cursor: pointer;
+	opacity: 0;
+}
+#slider-area:hover #next, #slider-area:hover #prev
+{
+	opacity: 1;
+	transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+}
+
+/* format the table for poster and presentations */
+#poster_and_talk
+{
+	 border-collapse: collapse;
+}
+#poster_and_talk td
+{
+	padding: 20px auto;
+	vertical-align: top;
+	text-align: center;
+}
+#poster_and_talk tr {
+	border-bottom: 1px dashed blue;
+}​

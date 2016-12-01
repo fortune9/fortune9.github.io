@@ -1,0 +1,6 @@
+1. Cheatography, https://www.cheatography.com/. A website hosting thousands of cheat sheets.
+2. StackOverFlow, http://stackoverflow.com/. A website to ask and answer programming-related questions.
+3. http://www.lfd.uci.edu/~gohlke/pythonlibs/. A 3rd party site hosting many unofficial Python Modules.
+4. https://pythonprogramming.net/. A website containing Python tutorials.
+5. https://pypi.python.org/pypi. Python's main package official site.
+6. https://www.mturk.com/. Amazon Mechanical Turk for outsourcing workforce on intelligence.
